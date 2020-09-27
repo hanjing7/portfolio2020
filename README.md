@@ -1,4 +1,4 @@
-# JingPortfolio19
+# JingPortfolio20
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.6.
 
@@ -26,10 +26,11 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
-##Command
+## Command
+If necessary to reinstall angular-kit: `npm install --save-dev @angular-devkit/build-angular` 
 `npm install ngx-device-detector --save`
-
-`ng build --prod --output-path docs --base-href https://hanjing7.github.io/portfolio19/`
+To publish at github.
+`ng build --prod --output-path docs --base-href https://hanjing7.github.io/portfolio2020/`
 `cd docs`
 `mv index.html 404.html`
 `cd ..`
