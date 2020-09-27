@@ -1,0 +1,94 @@
+.list-container {
+    box-shadow: 0 0 60px #ccc;
+    width: 400px;
+}
+
+.list-item {
+    display: block;
+    width: 400px;
+    font-size: 20px;
+    line-height: 32px;
+    box-sizing: border-box;
+    min-height: 80px;
+    padding: 24px 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.right {
+    text-align: right;
+    float: right;
+}
+
+.normal {
+    color: #000;
+    background-image: linear-gradient( 90deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.1));
+}
+
+.normal:hover {
+    color: #fff;
+    background-image: linear-gradient(90deg, #e06f51, #ba6954);
+}
+
+.normal:active {
+    color: #fff;
+    background-image: linear-gradient(90deg, #714437, #4c2b22);
+}
+
+.normal:active a,
+.normal:hover a {
+    color: #fff;
+}
+
+.product-container {
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+    width: 400px;
+}
+
+.list-container {
+    box-shadow: 0 0 60px #ccc;
+    width: 400px;
+}
+
+.list-item {
+    display: block;
+    width: 400px;
+    font-size: 20px;
+    line-height: 32px;
+    box-sizing: border-box;
+    min-height: 80px;
+    padding: 24px 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.right {
+    text-align: right;
+    float: right;
+}
+
+.normal {
+    color: #000;
+    background-image: linear-gradient( 90deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.1));
+}
+
+.normal:hover {
+    color: #fff;
+    background-image: linear-gradient(90deg, #e06f51, #ba6954);
+}
+
+.normal:active {
+    color: #cbc7c8;
+    background-image: linear-gradient(90deg, #714437, #4c2b22);
+}
+
+.normal:active a,
+.normal:hover a {
+    color: #fff;
+}
+
+a>.fa:hover {
+    color: #ba6954;
+}
+
+@media only screen and (max-width: 720px) {}

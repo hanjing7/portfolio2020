@@ -1,0 +1,12 @@
+<div class="container">
+    <div class="spaceTop"></div>
+    <h1>
+        Media Information</h1>
+    <div class="grid">
+        <div *ngFor="let craft of crafts" class="element-item">
+            <a [href]="getPath(craft.name)">
+                <img [src]="getPath(craft.name)" />
+            </a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,363 @@
+<div class="content">
+        <div class="left">
+          <h1>Web CRD</h1>
+          <div class="seperator"></div>
+        </div>
+        <div class="right">
+          <h5>FINRA RAD Project</h5>
+          <label class="grey">Jun 2017</label>
+        </div>
+        <h3>Background of Web CRD</h3>
+        <p>
+          The 1980's. it was very hard to register as a broker. Each exchange and
+          state government had different rules and procedures for registration. A
+          large firm would need to submit dozens of different registration forms to
+          register a single employee.
+        </p>
+        <p>
+          The regulators got together and agreed on a uniform set of registration
+          forms (Fun fact: the "U" in U4, U5, etc. stands for "uniform"). Better
+          yet, in 1999, FINRA (then NASD) launched a website (WebCRD) which was a
+          registration "one stop shop". This was a huge win for the industry. Since
+          then the world kept changing and CRD kept busy adapting to the changes.
+        </p>
+        <img
+          src="assets/img/res/crd/current.png"
+          alt="CRD current search"
+          style="width:100%;object-fit:contain; object-position: 100% 0%;"
+        />
+        <p>
+          Nowadays, as users increasly expect enterprise/work applications to be
+          intuitive and more like applications they use in their personal lives ,
+          users expect information to be readily available and easier to consume so
+          they can perform their activities more efficiently. A redesign of the CRD
+          is coming on to the roadmap.
+        </p>
+        <p>Some feedback received regarding the existing system includes</p>
+        <ul class="circle">
+          <li>
+            Tired of maintaining paper copies of filings and getting ink signatures
+          </li>
+          <li>CRD requires extensive training to use. Not intuitive</li>
+          <li>
+            It’s not obvious which information in CRD should be of heightened
+            concern
+          </li>
+          <li>
+            It’s difficult to manage all of the compliance tasks. Must check several
+            areas of CRD
+          </li>
+        </ul>
+        <hr />
+        <h3>Goal of Redesign</h3>
+        <p>Given the context above, the goal of our redesign is to:</p>
+        <ul class="square">
+          <li>
+            Create a registration & licensing system that encourages information
+            sharing and makes it easier for the industry to meet its registration &
+            compliance obligations
+          </li>
+          <li>
+            Lay the foundation for an efficient, risk-based, and data-driven
+            disclosure and regulatory review program for regulators.
+          </li>
+          <li>
+            Curate customized user experience to provide a more modern site
+            experience to our users that makes it easy for them to do their work,
+            allow users to customize their views e.g. An Examiner’s objective for
+            using CRD varies from a RAD Disclosure Review staff’s use of CRD, pursue
+            the notion of a portal experience – Firm access via Firm Gateway; FINRA
+            access via Enterprise desktop etc.
+          </li>
+        </ul>
+        <hr />
+        <h2>Problems to be Solved</h2>
+        <p>
+          One of the most important tasks we try to resolve through new platform is
+          to keep firm users updated with their activities requiring their
+          attention. Highlight activities needing scrutiny. allow firms to
+          filter/sort/export/manage tasks based on customized needs. Nowadays, It’s
+          not obvious which information in CRD should be of heightened
+          concernDifficult to manage all of the compliance tasks. Must check several
+          areas of CRD(queues/reports/notifications)
+        </p>
+        <p>
+          Currently, most of the in-system communication are handled via email, mail
+          and phone calls including responding to document requests electronically.
+          Working with FINRA on a disclosure often requires an interaction which is
+          longer than a single CRD event.We target at having all communication be
+          done through the system, both for review simplicity and for historical
+          reference
+        </p>
+        <img
+          src="assets/img/res/crd/user-system.png"
+          alt="FINRA Technology Platform Blueprint"
+        />
+        <h2>Personas</h2>
+        <p>Target users for CRD system includes:</p>
+        <div class="quiz-window-body">
+          <div class="gui-window-awards">
+            <ul class="guiz-awards-row guiz-awards-header">
+              <li class="guiz-awards-header-star">&nbsp;</li>
+              <li class="guiz-awards-header-title">Type</li>
+              <li class="guiz-awards-header-track">Use Cases</li>
+            </ul>
+            <ul class="guiz-awards-row guiz-awards-row-even">
+              <li class="guiz-awards-star"><span class="star goldstar"></span></li>
+              <li class="guiz-awards-title">
+                Small Firm
+                <div class="guiz-awards-subtitle">0-50 reps</div>
+              </li>
+              <li class="guiz-awards-track">
+                <p>
+                  1or 2 people wear multiple hats and manage registration and
+                  ongoing compliance Probably log in once or twice a year Need more
+                  guidance on how to fill forms and use the system in general Need
+                  more hand holding to stay on top of tasks/deadlines
+                </p>
+                <ul class="square">
+                  <li>
+                    Submits registration compliance forms to onboard firm, branches,
+                    people
+                  </li>
+                  <li>
+                    Submits supplemental compliance documentation as a response to
+                    FINRA's request
+                  </li>
+                  <li>
+                    Once on boarded only need to access the systems to meet FINRA
+                    filing deadlines mostly once or twice a year (commonly during
+                    renewals)
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="guiz-awards-row">
+              <li class="guiz-awards-star">
+                <span class="star silverstar"></span>
+              </li>
+              <li class="guiz-awards-title">
+                Medium Firm
+                <div class="guiz-awards-subtitle">50 - 500 reps</div>
+              </li>
+              <li class="guiz-awards-track">
+                Relatively more mature registration and compliance processes but
+                still need handholding Some of them outsource management of
+                registration system to vendors and would likely not do that if we
+                gave them better ways to manage the registration process
+              </li>
+            </ul>
+            <ul class="guiz-awards-row guiz-awards-row-even">
+              <li class="guiz-awards-star">
+                <span class="star bronzestar"></span>
+              </li>
+              <li class="guiz-awards-title">
+                Large Firm
+                <div class="guiz-awards-subtitle">>500 reps</div>
+              </li>
+              <li class="guiz-awards-track">
+                Savvy users. Either integrated with vendors or have built their own
+                internal systems to manage the collection of all the information
+                needed to meet their reporting needs Keen on sending and receiving
+                information via more modern interfaces such as APIs/web services
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <h3>Activity Types</h3>
+        <p>
+          Carrying knowledge from classic CRD platform, users typically open CRD to
+          follow 6 types of activities:
+        </p>
+        <ul class="square">
+          <li>
+            Reminding firm users with upcoming, approaching and past due continuing
+            education requirement
+          </li>
+          <li>
+            Managing disclosure events for Rep employees by providing draft, review
+            and resolve
+          </li>
+          <li>Notifying employee with their exam status</li>
+          <li>
+            Onboard new Rep employee with registration, disclosure and fingerprint
+            information
+          </li>
+          <li>
+            Update personal information, registration and termination record for
+            Reps
+          </li>
+        </ul>
+    
+        <hr />
+        <p>
+          By looking into historical analytics, we find the top activities by
+          frequency of use are sorted as:
+        </p>
+        <p>
+          CE Requirement <b class="red"> > </b> Registration
+          <b class="red"> > </b> Employment Info Update
+          <b class="red"> > </b> disclosure event <b class="red"> > </b> Onboarding
+        </p>
+        <hr />
+        <h3>Design Challenges</h3>
+        <h4>UI Challenge - Movable Piece</h4>
+        <p>
+          It has been discussed intensively regarding whether allowing users to drag
+          and drop to customize their dashboard interface is necessary configuration
+          of our platform. Feature of such has been applied to many FINRA systems
+          and widely accepted by management as a common knowledge. However, through
+          a couple of user interviews, we learned that most novice users doesn’t
+          realize they can customize the UI due to lacking of visual indicator. From
+          conversation with engineers we learned it is challenging to build such
+          components that could scale easily. We start rethinking about the
+          necessity of having this feature. After conducting some (comparative
+          analysis)…. With similar enterprise level products, such as ... , we
+          noticed less movable pieces being used in system design nowadays. Probably
+          because the visual hint is so subtle to notice, and the strategy of
+          allowing users to restore their previous setting would be a even bigger
+          challenge. A good design usually doesn't require change of views very
+          often, e,g. … I believe Movable pieces is great for expert user but not so
+          friendly for beginners who are just started with the system. Once expert
+          users get their customized view configured, they are less likely to use
+          feature of such to modify the view either. Since the new web CRD is
+          targeting at lower entrance barrier and flatten learning curve, building a
+          generic usable dashboard rather than a configurable one should be our main
+          focus.
+        </p>
+        <h4>Discussion around saved filters option</h4>
+        <p>
+          Numerous discussion has been undertaken regarding the appropriate set up
+          of filters. At first it is straightforward that clicking on filter button
+          would reveal the filter panel.
+        </p>
+        <p>
+          Hassles come in when “save filter” feature kicks in, as well as the option
+          to apply an existing saved filter and update the current filter. This
+          complicates the flow with far more requirements as when user trigger the
+          filter, the UI need to clearly indicate if it is a saved one, if it has
+          been modified, if the modified changes has been applied and how to rename
+          this filter.
+        </p>
+        <img src="assets/img/res/crd/filterflow1.png" alt="Filter Option 1" />
+        <h4>Option 1</h4>
+        <p>
+          The initial solution we had was to have the save filter feature inside the
+          filters panel, as they are considered
+        </p>
+        <p>
+          <b>Detail Improvements: </b> Naming the new filter was a modal popup, that
+          get changed into a field level update in later revisions to preserve the
+          context action took place.
+        </p>
+    
+        <img src="assets/img/res/crd/filterflow2.png" alt="Filter Option 2" />
+        <h4>Option 2</h4>
+        <p>
+          We received some criticism during internal review for the access to saved
+          filter is buried too deep, that it takes one extra click to open. Also the
+          display of having dropdown control on top of panel yielded too many
+          layers.
+        </p>
+        <p>
+          So we came up with another version with saved filters moved up on
+          hierarchy. The logic behind such design choice being filters and filter
+          options are under the same logic group, “saved filters” are the controls
+          on top of filter settings.
+        </p>
+    
+        <img src="assets/img/res/crd/filterflow3.1.png" alt="Filter Option 3" />
+        <h4>Option 3</h4>
+        <p>
+          The design looks very good by mockup but was quickly falling down in later
+          useability testing. As users were asked how would they save a filter or
+          apply a filter that has been saved already, majority of them tend to look
+          for options inside filter panel and ignore the “saved filter” text there
+          right at their face. The reason for that was partly because two controls
+          could be far away from each other on wide display that users can’t easily
+          draw connections between the two.
+        </p>
+        <hr />
+        <h2>Final Design Solution</h2>
+        <p>
+          At last, we came up with this composite design that balance the
+          expectations from all parties. In this revision, not only we moved “save
+          filter” and “filter” options close to each other, but also keep both of
+          them visible when panel is revealed, not giving users a single chance to
+          miss them.
+        </p>
+        <p>
+          Beyond that, this flow perfectly solved dilemma of multiple layering on UI
+          as the overlay/confirmation modal from deletion is visually separated from
+          the panel.
+        </p>
+        <h5>Animated Filter Behavior</h5>
+        <!-- <img src="assets/img/res/crd/filter.gif" alt="Animated Filter Behavior" /> -->
+        <video width="100%" controls>
+          <source src="assets/img/res/crd/filter2.mp4" type="video/mp4" />
+          <!-- <source src="mov_bbb.ogg" type="video/ogg"> -->
+          Your browser does not support HTML5 video.
+        </video>
+    
+        <h3>Solutions</h3>
+        <p class="red">
+          <i class="fa fa-link"></i>
+          <b>
+            <a
+              class="red"
+              target="_blank"
+              href="http://hanjing7.com/portfolioAsset/CRD_helpcard/index.html"
+              >&nbsp;Onboarding Tutorial</a
+            ></b
+          >
+        </p>
+        <p>
+          Experimental onboarding experience introducing new features in WebCRD with
+          JS based implementation.
+        </p>
+    
+        <p class="red">
+          <i class="fa fa-link"></i>
+          <b>
+            <a
+              class="red"
+              target="_blank"
+              href="http://hanjing7.com/portfolioAsset/CRD_proto/0.html"
+              >&nbsp;CRD Prototype</a
+            ></b
+          >
+        </p>
+        <p class="red">
+          <i class="fa fa-file-o"></i>
+          <b>
+            <a class="red" target="_blank" href="assets/img/pj/JH-WebCRD.pdf"
+              >&nbsp;CRD Case Study [PDF]</a
+            ></b
+          >
+        </p>
+        <p class="red">
+          <i class="fa fa-file-o"></i>
+          <b>
+            <a class="red" target="_bpank" href="assets/img/pj/JH-Dashboards.pdf"
+              >&nbsp;Dashboards Concept [PDF]</a
+            ></b
+          >
+        </p>
+        <p>Finalyzed CRD workflow</p>
+    
+        <h3>Impact of New CRD</h3>
+        <p>
+          This new and improved CRD will benefit everyone involved - The industry,
+          FINRA and other regulators. Return on investment could be measured in
+          terms of the significant time and cost savings for firms in the
+          efficiencies gained with the improved channels of communications and ease
+          of reporting with the new interfaces. Allowing firms to achieve greater
+          levels of compliance at reduced costs, by lowering learning curves or
+          reducing missed filings or deadlines that could otherwise result in costly
+          penalties. Similarly, FINRA and other regulators benefit because there are
+          efficiencies gained by not spending time and labour on manual processes
+          but are freed to use them instead in more effective ways to monitor firms,
+          providing savings that go beyond budget line items.
+        </p>
+      </div>

@@ -1,0 +1,125 @@
+.cd-tab-filter {
+    position: relative;
+    display: flex;
+    width: 250px;
+    flex-direction: row;
+    margin: 0 auto 2em;
+}
+
+.cd-tab-filter ul {
+    padding-inline-start: 0px;
+    background-color: #ffffff;
+    box-shadow: inset 0 -2px 0 #BA6954;
+}
+
+.cd-tab-filter li {
+    display: block;
+    line-height: 50px;
+    padding-left: 14px;
+}
+
+
+/*.cd-tab-filter a.selected {*/
+
+
+/*    background: #BA6954;*/
+
+
+/*    color: #ffffff;*/
+
+
+/*}*/
+
+.cd-filters {
+    display: block;
+    margin: auto;
+    position: relative;
+    width: 100%;
+}
+
+.cd-filters li {
+    display: block;
+}
+
+.cd-filters li:hover {
+    color: #BA6954;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.selected {
+    background-color: #BA6954;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.cd-filters li.selected:hover {
+    color: white !important;
+}
+
+@media only screen and (min-width: 1170px) {
+    .cd-tab-filter {
+        /* tabbed navigation on big devices */
+        width: 100%;
+        clear: both;
+        height: 50px;
+        -webkit-transition: width 0.3s;
+        -moz-transition: width 0.3s;
+        transition: width 0.3s;
+        margin-bottom: 2em;
+        display: flex;
+    }
+    .cd-tab-filter ul {
+        display: flex;
+        justify-content: center;
+    }
+    .cd-filters li {
+        display: inline-block;
+        padding: 0 32px;
+        text-align: center;
+    }
+    .cd-tab-filter.filter-is-visible {
+        /* reduce width when filter is visible */
+        width: 80%;
+    }
+}
+
+.grid {
+    -webkit-column-count: auto;
+    -webkit-column-gap: 24px;
+    -webkit-column-fill: balance;
+    -webkit-column-width: 300px;
+    -moz-column-count: auto;
+    -moz-column-gap: 24px;
+    -moz-column-fill: balance;
+    -moz-column-width: 300px;
+    column-count: auto;
+    column-gap: 24px;
+    column-fill: balance;
+    column-width: 300px;
+}
+
+.mix:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 10px #9e9e9e, 0 0 90vw #d6d6d6, 0 0 1000px #bfbfbf;;
+    transition: transform 1s;
+    background-color: #BA6954;
+}
+
+
+/* Transition on scaling needed to be added*/
+
+.mix {
+    transition: transform 1s;
+    margin-bottom: 24px;
+}
+
+
+/* a {
+    color: #BA6954;
+    text-decoration: none;
+} */
+
+img {
+    width: 100%;
+}

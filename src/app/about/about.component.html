@@ -1,0 +1,86 @@
+<div class="container" style="background: white; width: 100%; margin-bottom:0px;">
+  <div class="spaceTop"></div>
+  <div class="content">
+    <div class="center-container">
+    <h1><span class="red">A</span>bout</h1>
+  </div>
+    <div class="center-container">
+      <h2 style="width: 60%;margin: auto">
+        As an experience designer, my goal is to bring value and light up smiles
+        on users, focusing on delivering simple, feasible and beautiful business
+        solutions.
+      </h2>
+    </div>
+  </div>
+
+  <div class="spaceTop"></div>
+  <div class="center-container profile">
+    <div *ngFor="let link of links">
+      <a href="{{ link.url }}"
+        ><i class="fa" [class]="'fa fa-' + link.name" target="_blank"></i
+      >
+      <span class="profile_label">{{ link.name }}</span>
+    </a>
+    </div>
+  </div>
+  <div class="spaceTop"></div>
+
+  <h1><span class="red">S</span>olutions</h1>
+  <div class="center-container " *ngIf="sites" style="max-width: 960px">
+    <div class="product-container">
+      <h4>Products</h4>
+      <div class="list-container">
+        <div *ngFor="let site of sites">
+          <div class="list-item normal">
+            <a href="{{ site.url }}" target="_blank">
+              <span class="left">{{ site.name }}</span>
+            </a>
+            <span class="right">
+              <img
+                src="{{ site.src }}"
+                style="max-width: 140px; max-height:36px;"
+              />
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-container">
+      <h4>Side Projects</h4>
+      <div class="list-container">
+        <div *ngFor="let side of sides">
+          <a href="{{ side.url }}" target="_blank">
+            <div class="list-item normal">
+              <span class="left">{{ side.name }}</span>
+              <span class="right">
+                <img
+                  src="{{ side.src }}"
+                  style="max-width: 140px; max-height:36px;"
+                />
+              </span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="spaceTop"></div>
+  <!-- <h1><span class="red">R</span>esume</h1>
+  <div class="spaceTop"></div>
+  <div class="center-container">
+    <img
+      src="assets/img/JingHanPD.png"
+      alt="Jing's Resume"
+      style="max-width: 890px;"
+    />
+  </div> -->
+  <div class="spaceTop"></div>
+  <!-- <div class="center-container fa-lg ">
+    <a class="red" href="assets/img/res/JingHanPD.pdf" target="_blank"
+      ><i class="fa fa-download"></i><b> Jing's Resume</b></a
+    >
+  </div> -->
+  <div class="spaceTop"></div>
+</div>

@@ -1,0 +1,197 @@
+.entries:before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 50%;
+  bottom: 0px;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 4px;
+  z-index:-1;
+  background-color: #fff;
+}
+.entries {
+  width: calc(100% - 80px);
+  max-width: 900px;
+  margin: 4em auto;
+  position: relative;
+  left: -5px;
+  height: 168em;
+}
+.entries .entry {
+  width: calc(50% - 80px);
+  float: left;
+  padding: 20px;
+  clear: both;
+  text-align: right;
+}
+.entries .entry:not(:first-child) {
+  margin-top: -60px;
+}
+.entries .entry .title {
+  font-size: 4.5vh;
+  margin-bottom: -20px;
+  position: relative;
+  color: rgba(0, 0, 0, 0.15);
+  z-index: 0;
+  letter-spacing: 6px;
+  font-weight: 700;
+}
+.sub_title {
+  letter-spacing: 2px;
+  font-size: 3.2vh;
+  color: black;
+  font-weight: 500;
+  text-decoration: none;
+  margin-bottom: 12px;
+}
+
+.sub_title a {
+  text-decoration: none;
+}
+a {
+  font-weight: 500;
+  /* text-decoration: underline;*/
+  color: black; 
+}
+
+a:hover{
+  color:#ba6954;
+}
+
+.entries .entry .title:before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border: 4px solid #bbb;
+  /*  background-color: #1D1D1D;*/
+  border-radius: 100%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: -73px;
+  z-index: 1000;
+}
+.entries .entry .title.big:before {
+  width: 24px;
+  height: 24px;
+  border-color: #d8b1a6;
+  background-color: rgb(186, 105, 84);
+  -webkit-transform: translate(8px, -50%);
+  transform: translate(8px, -50%);
+}
+.entries .entry .body {
+  color: #666;
+}
+.entries .entry .body p {
+  line-height: 1.4em;
+}
+.entries .entry:nth-child(2n) {
+  text-align: left;
+  float: right;
+}
+.entries .entry:nth-child(2n) .title:before {
+  left: -63px;
+}
+.entries .entry:nth-child(2n) .title.big:before {
+  -webkit-transform: translate(-8px, -50%);
+  transform: translate(-8px, -50%);
+}
+
+/* ----------------Tooltip container---------------------- */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  color:black;
+  font-weight: 500;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 320px;
+  background-color: rgba(235, 235, 235, 0.7);
+  filter: drop-shadow(8px 8px 10px #ccc);
+  text-align: left;
+  padding: 10px;
+  line-height: 1.5em;
+  border-radius: 2px;
+
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+/* ----------------Background position---------------------- */
+.bg {
+  display: block;
+  width: 915px;
+  height: 500px;
+  background: url(../../assets/img/us_map.png) no-repeat;
+  background-size:contain;
+  opacity: 0.03;
+  z-index: -1;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.dot {
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-color: rgba(0, 255, 0, 1);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  opacity: 0.5;
+  background-color: #ba6954;
+  transform: translate(-400px, -26px);
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+
+  /* ----------------Responsiveness---------------------- */
+  @media only screen and (max-width: 960px) {
+     .entries .entry:nth-child(n) {
+      text-align: left;
+      float: right;
+      margin-bottom: 2em;
+    }
+
+    .entries .entry:nth-child(n) .title:before {
+      left: -63px;
+    }
+
+     .entries .entry:nth-child(n) .title.big:before {
+      -webkit-transform: translate(-8px, -50%);
+      transform: translate(-8px, -50%);
+    }
+
+     .entries {
+      /*    margin-left: 24px;*/
+      padding-left: 48px;
+    }
+
+    .entries:before {
+      left: 64px;
+    }
+
+    .entries .entry {
+      width: calc(100% - 80px);
+    }
+
+    .dot,
+    .bg {
+      display: none;
+    }
+  }
+

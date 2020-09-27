@@ -1,0 +1,41 @@
+export class Craft {
+  name: string;
+  tag: string;
+}
+
+export const Crafts: Craft[] = [
+  { name: '2', tag: ''},
+  { name: '3', tag: ''},
+  { name: '4', tag: ''},
+  { name: '5', tag: ''},
+  { name: '6', tag: ''},
+  { name: '7', tag: ''},
+  { name: '8', tag: ''},
+  { name: '9', tag: ''},
+  { name: '10', tag: ''},
+  { name: '11', tag: ''},
+  { name: '12', tag: ''},
+  { name: '13', tag: ''},
+  { name: '14', tag: ''},
+  { name: '15', tag: ''},
+  { name: '16', tag: ''},
+  { name: '17', tag: ''},
+  { name: '18', tag: ''},
+  { name: '19', tag: ''},
+  { name: '20', tag: ''},
+  { name: '21', tag: ''},
+  { name: '22', tag: ''},
+  { name: '23', tag: ''},
+  { name: '24', tag: ''},
+  { name: '25', tag: ''},
+  { name: '26', tag: ''},
+  { name: '27', tag: ''},
+  { name: '28', tag: ''},
+  { name: '29', tag: ''},
+  { name: '30', tag: ''},
+  { name: '31', tag: ''},
+  { name: '32', tag: ''},
+  { name: '33', tag: ''},
+  { name: '34', tag: ''},
+  { name: '35', tag: ''},
+];

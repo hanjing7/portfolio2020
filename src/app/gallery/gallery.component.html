@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="spaceTop"></div>
+    <h1>Work Gallery</h1>
+    <div class="cd-main-content">
+        <div class="cd-tab-filter">
+            <ul class="cd-filters">
+                <li class="filter" (click)="filterTag('all')" [class.selected]="tag === 'all'">All</li>
+                <li class="filter" (click)="filterTag('web')" [class.selected]="tag === 'web'">Web</li>
+                <li class="filter" (click)="filterTag('fc')" [class.selected]="tag === 'fc'">Info Graphic</li>
+                <li class="filter" (click)="filterTag('mobile')" [class.selected]="tag === 'mobile'">Mobile</li>
+                <li class="filter" (click)="filterTag('il')" [class.selected]="tag === 'il'">Illustration</li>
+                <!--                <li class="filter" (click)="filterTag('sys')" [class.selected]="tag === 'sys'">Enterprise</li>-->
+            </ul>
+        </div>
+
+        <section class="grid">
+
+            <div *ngFor="let gallery of galleries | galleryTagFilter: tag" class="mix" style="display: inline-block;">
+                <a [href]="getPath(gallery.name)">
+                    <img [src]="getPath(gallery.name)" alt="" />
+                    <!--                  <span>{{gallery.name}}</span>-->
+                </a>
+            </div>
+            <div *ngIf="(galleries | galleryTagFilter: tag).length == 0" class="cd-fail-message">No results found</div>
+        </section>
+        <!-- cd-gallery -->
+    </div>
+</div>

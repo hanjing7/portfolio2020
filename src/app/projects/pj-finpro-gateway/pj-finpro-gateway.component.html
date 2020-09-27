@@ -1,0 +1,74 @@
+<div class="triangle1 block"></div>
+<div class="triangle2 block"></div>
+<div class="triangle3 block"></div>
+<div class="triangle4 block"></div>
+
+<div class="content-area">
+  <a routerLink="/home" class="back bc-float">
+    <i class="fa fa-chevron-left"></i><span>Back To Home</span>
+  </a>
+  <pdf-viewer
+    src="assets/img/pj/JH-Dashboards.pdf"
+    [render-text]="true"
+    [original-size]="false"
+    [fit-to-page]="true"
+    style="display: block; margin-top: -16px;"
+  ></pdf-viewer>
+  <div class="content">
+    <div class="left">
+      <h1>Financial Professional Gateway</h1>
+      <div class="seperator"></div>
+    </div>
+    <div class="right">
+      <h5>FINRA</h5>
+      <label class="grey">Jun 2017</label>
+    </div>
+    <p>Financial Professional Gateway allows you to</p>
+    <ul class="square">
+      <li>
+        Review your registration and licensing information (CRD/IARD systems)
+      </li>
+      <li>Get reminders of tasks requiring representative's attention</li>
+      <li>See requests from firm for input on Form U4</li>
+    </ul>
+    <hr />
+    <h2>Demo Prototypes</h2>
+    <h3>Desktop</h3>
+    <!-- <iframe class="prototype" src="http://hanjing7.com/portfolioAsset/FP_proto/1.html"></iframe>
+        <h3>Mobile</h3>
+        <iframe class="prototype" height="850px" src="http://hanjing7.com/portfolioAsset/FP_mobile/1.html"></iframe> -->
+    <h2>Implementation</h2>
+    <p>Screen recording of FinPro can be viewed at the following link</p>
+    <a class="red" href="https://youtu.be/V89y4a8G0F4" target="_blank">
+      <i class="fa fa-link"></i> Implementation on UI</a
+    >
+    <h2>Future Concept</h2>
+    <p>
+      A new UI prototype created after the corporate-wide design system being
+      launched. The UI is created based on VMware Clariy UI
+    </p>
+    <iframe
+      class="prototype"
+      src="https://www.youtube.com/embed/tRsCkshyVYE"
+      frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+    <p>
+      Check for
+      <a href="https://www.youtube.com/watch?v=X6CL5w7LNDM" target="_blank"
+        >Mobile Version</a
+      >
+      for how this UI adjust itself on mobile devices.
+    </p>
+    <h3>Feedback Received</h3>
+    <p>
+      Upon launching as a pioneer, feedback received on FinPro has been
+      universally positive. Some Reps start asking when the Web CRD will start
+      to look like it. Firms are happy to remove misc manual entries they have
+      to perform nowadays, and are attracted to the notion that the new site
+      could finally kill signature requirements.
+    </p>
+  </div>
+</div>
+<app-home></app-home>

@@ -1,0 +1,423 @@
+<div class="triangle1 block"></div>
+<div class="triangle2 block"></div>
+<div class="triangle3 block"></div>
+<div class="triangle4 block"></div>
+<div class="content-area">
+  <ngx-spinner
+    bdOpacity="0.5"
+    type="ball-fussion"
+    size="medium"
+    color="#ccc"
+  ></ngx-spinner>
+  <a routerLink="/home" class="back bc-float">
+    <i class="fa fa-chevron-left"></i><span>Back To Home</span>
+  </a>
+
+  <pdf-viewer
+    src="assets/img/pj/JH-InternalPlatform.pdf"
+    [autoresize]="true"
+    [original-size]="false"
+    [render-text]="true"
+    [fit-to-page]="true"
+    style="display: block; "
+    (after-load-complete)="callBackFn($event)"
+  ></pdf-viewer>
+
+  <div *ngIf="isDisplayNonPDF">
+    <div
+      class="section darktheme is-mobile"
+      style="background-color:#5E7260;margin-top: -2em;"
+    >
+      <div class="content">
+        <div class="spaceTop"></div>
+        <h3>Interaction Paradigm</h3>
+        <p>
+          One key to this project was creating clean flows, testing them out,
+          and then making them cleaner. Vehice oriented info management and data
+          access could be a input-intensive process that requires the work of
+          multiple roles: the technicians taking hands-on practice and the
+          engineers running trouble shooting. I worked on this flow until it was
+          as smooth as it could be, prototyped iteratively to define a new
+          interaction paradigm for the product’s overall main task.
+        </p>
+        <div class="columns no-shadow is-mobile">
+          <!-- <slideshow [imageUrls]="imageUrlArray"></slideshow> -->
+          <img src="assets/img/res/gbt/ip-diagram.png" alt="" />
+        </div>
+      </div>
+      <div class="columns content no-shadow is-desktop">
+        <div class="column">
+          <a href="assets/img/res/gbt/InfoPanel.gif" target="_blank">
+            <img src="assets/img/res/gbt/InfoPanel.gif" alt="" />
+          </a>
+        </div>
+        <div class="column">
+          <a href="assets/img/res/gbt/ActionPanel.gif" target="_blank">
+            <img src="assets/img/res/gbt/ActionPanel.gif" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!--Visual Deliverable-->
+    <div class="section is-mobile " style="background-color:white;">
+      <div class="content">
+        <div class="spaceTop"></div>
+        <h3>Visual Deliverables</h3>
+        <p></p>
+        <a
+          class="button"
+          style="background-color:#777779;"
+          href="service-platform#design-details"
+          >Prototypes & Graphics</a
+        >
+        &nbsp;&nbsp;
+        <a
+          class="button"
+          style="background-color:#BA6954;"
+          href="http://hanjing7.com/portfolioAsset/OTAstyle/OTA_pure.html"
+          target="_blank"
+          >Pure CSS UI Library</a
+        >
+        <div class="no-shadow">
+          <img
+            src="assets/img/res/gbt/visual-mock.png"
+            alt="Sample mockups from Internal Platform"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="level is-mobile no-shadow" style="background-color:white;">
+      <a
+        href="http://hanjing7.com/portfolioAsset/OTAstyle/OTA_pure.html"
+        target="_blank"
+      >
+        <img
+          class="no-shadow"
+          src="assets/img/res/gbt/visual-mock2.png"
+          alt="CSS UI Library Screens"
+        />
+      </a>
+    </div>
+
+    <div
+      class="section is-mobile darktheme"
+      style="background-color:#46797A; margin-top:-18vh;"
+    >
+      <div class="content">
+        <div class="spaceTop"></div>
+        <div class="spaceTop"></div>
+        <h3>Pattern Library</h3>
+        <p>
+          As we puzzle pieces of stories together, the big picture of a holistic
+          service platform reveals. We start onboarding new designers to
+          collaborate globally to help out the design process, and ensuring
+          design consistency along with expansion of project scope is necessary.
+        </p>
+        <a class="button" href="https://sketch.cloud/s/akzxD" target="_blank"
+          >View Sketch Library</a
+        >
+        <div class="columns no-shadow">
+          <div class="column">
+            <img src="assets/img/res/gbt/pl-1.png" alt="" />
+          </div>
+          <div class="column">
+            <img src="assets/img/res/gbt/pl-2.png" alt="" />
+          </div>
+          <div class="column">
+            <img src="assets/img/res/gbt/pl-3.png" alt="" />
+          </div>
+          <div class="column">
+            <img src="assets/img/res/gbt/pl-4.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="section is-mobile no-shadow darktheme"
+      style="background-color:#00464F;"
+    >
+      <div class="content">
+        <div class="spaceTop"></div>
+        <h3>BYTON Asset Library</h3>
+        <p>
+          Vue based online asset libary including Branding Elements, documents,
+          color pallette and icons library with search function.
+        </p>
+        <a
+          class="button"
+          style="background-color:#BD955A"
+          href="https://hanjing-byton.bitbucket.io/index.html"
+          target="_blank"
+          >Visit Asset Site
+        </a>
+        <div class="no-shadow">
+          <img
+            src="assets/img/res/gbt/asset-lib.png"
+            alt="Asset Library Screens"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="section content" id="design-details">
+      <div class="spaceTop"></div>
+      <!-- <div class="content-container">
+        <img src="assets/img/res/internalUI/sketchdraft.png" alt="" />
+        <img src="assets/img/res/internalUI/sketchdraft1.png" alt="" />
+      </div> -->
+      <!-- <h3>Wireframing</h3> -->
+      <!-- <div class="content-container">
+        <img src="assets/img/res/gbt/s_wireframe.png" alt="" />
+        <img src="assets/img/res/gbt/s_wireframe1.png" alt="" />
+      </div> -->
+      <h3>Final Design</h3>
+      <p>
+        Collective design solution was provided along with the platform to serve
+      </p>
+      <ul class="square">
+        <li>Vehicle Smart Diagnostics</li>
+        <li>Digital User Manual</li>
+        <li>Fleet Management</li>
+        <li>Over the Air Deployment</li>
+        <li>SIM card Service Tracking</li>
+        <li>Global Vehicle Usage Monitoring</li>
+      </ul>
+      <img src="assets/img/res/internalUI/system_mock.png" alt="" />
+      <div class="spaceTop"></div>
+    </div>
+    <!-- End Content -->
+
+    <div class="spaceTop"></div>
+    <div class="level no-shadow">
+      <img src="assets/img/res/gbt/theming.png" alt="" />
+    </div>
+
+    <div class="content" id="design-details">
+      <!-- <div class="content-container">
+        <img src="assets/img/res/gbt/s_wireframe.png" alt="" />
+        <img src="assets/img/res/gbt/s_wireframe1.png" alt="" />
+      </div> -->
+
+      <h2>Prototype Demo</h2>
+      <p>
+        The project is still under NDA hence the details are sparse. For details
+        regarding my contribution to this project please reach out to me
+        <a class="red" href="">hanjing@umich.edu</a>
+      </p>
+      <h2>Prototype Samples</h2>
+      <h3>System Sign-In & Sign-Up</h3>
+      <!-- <a class="red" href="https://www.youtube.com/embed/PDOVHlqnwj4"
+        ><i class="fa fa-link"></i>&nbsp; BYTON ID Authentication </a
+      ><span class="grey">(Permission Required)</span> -->
+      <iframe
+        class="embed"
+        src="https://www.youtube.com/embed/PDOVHlqnwj4"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+      <br /><br />
+      <h4>Motion Design</h4>
+      <p>
+        Based on the empty state for password reset page, I designed a loading
+        motion graphics with SVG animation.
+      </p>
+      <!-- Car Loading Animation -->
+      <div class="cp_embed_wrapper">
+        <iframe
+          name="cp_embed_1"
+          src="https://codepen.io/jing-han/embed/rExPXM?height=365&amp;theme-id=0&amp;default-tab=css%2Cresult&amp;user=jing-han&amp;slug-hash=orbobd&amp;pen-title=orbobd&amp;name=cp_embed_1"
+          scrolling="no"
+          frameborder="0"
+          height="365"
+          allowtransparency="true"
+          allowfullscreen="true"
+          allowpaymentrequest="true"
+          title="rExPXM"
+          class="cp_embed_iframe "
+          style="width: 100%; height:400px;overflow:hidden; display:block;"
+          id="cp_embed_rExPXM"
+        ></iframe>
+      </div>
+      <!-- Countdown Timer -->
+      <div class="cp_embed_wrapper">
+        <iframe
+          name="cp_embed_1"
+          src="https://codepen.io/jing-han/embed/wLMYpY?height=365&amp;theme-id=0&amp;default-tab=css%2Cresult&amp;user=jing-han&amp;slug-hash=orbobd&amp;pen-title=orbobd&amp;name=cp_embed_1"
+          scrolling="no"
+          frameborder="0"
+          height="365"
+          allowtransparency="true"
+          allowfullscreen="true"
+          allowpaymentrequest="true"
+          title="wLMYpY"
+          class="cp_embed_iframe "
+          style="width: 100%; height:400px;overflow:hidden; display:block;"
+          id="cp_embed_wLMYpY"
+        ></iframe>
+      </div>
+
+      <div class="spaceTop"></div>
+      <h3>OTA Update Flow</h3>
+      <p>
+        Nowadays consumer’s expectations have radically changed. Service
+        companies that cannot meet those expectations are held back by outdated
+        processes and legacy technologies.
+      </p>
+      <!-- <a class="red" href="https://www.youtube.com/embed/eMrK-p6Ye_g">
+        <i class="fa fa-link"></i>&nbsp; Over The Air Update </a
+      ><span class="grey">(Permission Required)</span> -->
+      <iframe
+        class="embed"
+        src="https://www.youtube.com/embed/eMrK-p6Ye_g"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+
+      <h6>Find Nearby Dealership</h6>
+      <img
+        src="https://hanjing7.github.io/portfolio19/assets/img/gallery/2_storeFilter.gif"
+        alt="Nearby Dealers"
+      />
+      <h6>CSS Battery</h6>
+      <p>
+        Usually, graphical assets have the problem of being too large in size,
+        hard to locate and not flexible enough. To ensure the pixel perflect
+        delivery, I provided a pure CSS battery status indicator, so the battery
+        status could be rendered dynamically according to API source.
+      </p>
+      <!-- Battery Status Indicator-->
+      <div class="cp_embed_wrapper">
+        <iframe
+          name="Battery Status Indicator"
+          src="https://codepen.io/jing-han/embed/QXyZJX?height=365&amp;theme-id=0&amp;default-tab=css%2Cresult&amp;user=jing-han&amp;slug-hash=orbobd&amp;pen-title=orbobd&amp;name=cp_embed_1"
+          scrolling="no"
+          frameborder="0"
+          height="565"
+          allowtransparency="true"
+          allowfullscreen="true"
+          allowpaymentrequest="true"
+          title="QXyZJX"
+          class="cp_embed_iframe "
+          style="width: 100%; height:500px;overflow:hidden; display:block;"
+          id="cp_embed_QXyZJX"
+        ></iframe>
+      </div>
+
+      <div class="spaceTop"></div>
+      <h2>Extended Deliverable Appendix</h2>
+      <h3>System Visual</h3>
+      <h6>GB/T Monitoring</h6>
+      <p>
+        GB/T 32960.3 on-board terminal, parsing the vehicle CAN signals includes
+        Powertrain Drive status, brake system status, vehicle speed, Charge
+        info, Charge info, Odeometer info and HMI signals. Here is a screenshot
+        of final project developed under React.js
+      </p>
+      <img src="assets/img/res/gbt/GBT.png" alt="" />
+      <h6>Financial Order System</h6>
+      <p>Sub-system of Service Platform implemented in China.</p>
+      <img src="assets/img/res/gbt/financial_order_list.png" alt="" />
+      <img src="assets/img/res/gbt/financial_payment.png" alt="" />
+      <h6>DSMP - SIM Card Management</h6>
+      <img src="assets/img/res/gbt/dsmp_order_inquiry.png" alt="" />
+
+      <!-- <h3>CSS Library</h3>
+      <p>
+        To ensure the UI accuracy and consistency, I hand crafted a pure CSS
+        library for UI engineers to follow in development. Here are some sample
+        views:
+      </p>
+      <a
+        class="red"
+        href="http://hanjing7.com/portfolioAsset/OTAstyle/BytonID.html"
+      >
+        <i class="fa fa-link"></i>&nbsp; View CSS Library</a
+      > -->
+      <h3>Lessons Learned</h3>
+      <ul class="square">
+        <li>Create Sharable Design solutions and Assets</li>
+        <li>
+          Align with stakeholders on the goals and clarify requirements before
+          getting into design is core to project success.
+        </li>
+      </ul>
+      <br /><br />
+      <div class="spaceTop"></div>
+      <h3>Impacts & Results</h3>
+      <p>
+        Gained significant support and positive feedback from our business
+        stakeholders. We were able to roll out the system step by step within
+        the timeline.
+      </p>
+      <p>
+        Transforming technology using one unifying solutions that break down
+        traditional silos. It is one platform that easily secured and manage
+        track all the end points.
+      </p>
+      <p>
+        Laid out the foundation for design solutions and have style spects
+        documented to be easily adopted by new designers, and even engineers
+        were able to apply solutions without designers' presense.
+      </p>
+      <p>
+        By building out the component library and asset site, we were able to
+      </p>
+      <div>
+        <ul class="circle">
+          <li>
+            Create modularized and consistent design solutions across platforms,
+          </li>
+          <li>
+            Help multiple projects simutaneously to deliver end to end solutions
+            under limited headcount.
+          </li>
+          <li>
+            Save engineers from time-consuming styling tasks while guarding the
+            aesthetics of design.
+          </li>
+        </ul>
+      </div>
+      <br /><br /><br />
+      <hr />
+      <h3>My Contribution</h3>
+      <ul class="square">
+        <li>
+          Leading the project to identify requirements by conducting early stage
+          stakeholder interviews and market research.
+        </li>
+        <li>
+          Seting up design system and sketch style library for upcoming
+          designers to follow as a reference point.
+        </li>
+        <li>
+          Established interaction paradigm serving as the templates of internal
+          systems.
+        </li>
+        <li>
+          Developed CSS library and Asset library, launched on our company
+          server for internal references and resource sharing on a global level.
+        </li>
+        <li>Supported UI Visual design on part of platform tasks</li>
+        <li>
+          Coordinate a team of 3 designers to work collectively on the product,
+          running design discussion and critique sessions on regular basis
+        </li>
+      </ul>
+      <div class="spaceTop"></div>
+      <h3>If Possible ...</h3>
+      <p>
+        If given more time and resource, we would love to devote more time into
+        user research and continuously work along the projects to observe how
+        end-users interact with it, identify potential improvement and create
+        more tailored experience to optimize their workflows.
+      </p>
+      <div class="spaceTop"></div>
+    </div>
+    <!-- End Content -->
+  </div>
+</div>
+<app-home></app-home>

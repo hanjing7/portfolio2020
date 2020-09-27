@@ -1,0 +1,93 @@
+<div class="container loading" id="app">
+    <div class="lds-ripple"></div>
+    <div class="spaceTop"></div>
+    <h1>
+        My Name is <span class="red">J</span>ing <span class="red">H</span>AN
+    </h1>
+    <h2>I'm a <span>{{titlePlayer.play()}}</span></h2>
+    <div class="spaceTop"></div>
+
+    <div style="text-align:center;" *ngIf="projects">
+        <a routerLink={{project.url}} *ngFor="let project of projects" [style.backgroundImage]="imagePathAsBackground(project.img)" class="blog-card">
+                    <!-- *ngIf="!project.isToDo" -->
+                <div class="title-content">
+                    <h3>{{ project.name }}</h3>
+                    <hr/>
+                    <div class="desc">{{ project.slogan }}</div>
+                </div>
+                <div class="card-info">{{ project.desc }}</div>
+                <div class="utility-info">
+                    <ul class="utility-list">
+                        <li class="comments">{{ project.tag }}</li>
+                        <li class="date">{{ project.company }}</li>
+                    </ul>
+                </div>
+                <div class="gradient-overlay"></div>
+                <div class="color-overlay"></div>
+            </a>
+            <!-- <a href={{project.externalLink}} *ngIf="project.isToDo">
+                <div class="title-content">
+                    <h3>{{ project.name }}</h3>
+                    <hr/>
+                    <div class="desc">{{ project.slogan }}</div>
+                </div>
+                <div class="card-info">{{ project.desc }}</div>
+                <div class="utility-info">
+                    <ul class="utility-list">
+                        <li class="comments">{{ project.tag }}</li>
+                        <li class="date">{{ project.company }}</li>
+                    </ul>
+                </div>
+                <div class="gradient-overlay"></div>
+                <div class="color-overlay"></div>
+            </a> -->    
+    </div>
+    <div class="spaceTop"></div>
+    <h2><b><span class="red">C</span>OLLECTIONS</b></h2>
+    <div style="text-align:center;" *ngIf="projects">
+            <a routerLink={{project.url}} *ngFor="let project of projects2" [style.backgroundImage]="imagePathAsBackground(project.img)" class="blog-card">
+                <div class="title-content">
+                    <h3>{{ project.name }}</h3>
+                    <hr/>
+                    <div class="desc">{{ project.slogan }}</div>
+                </div>
+                <div class="card-info">{{ project.desc }}</div>
+                <div class="utility-info">
+                    <ul class="utility-list">
+                        <li class="comments">{{ project.tag }}</li>
+                        <li class="date">{{ project.company }}</li>
+                    </ul>
+                </div>
+                <div class="gradient-overlay"></div>
+                <div class="color-overlay"></div>
+            </a>
+
+    </div>
+    <div class="spaceTop"></div>
+    <h2><b><span class="red">P</span>OFILES</b></h2>
+    <div class="center-container profile">
+        <div *ngFor="let link of links">
+            <a href={{link.url}}><i class="fa" [class]="'fa fa-'+link.name" target="_blank"></i>
+            <span class="profile_label">{{link.name}}</span></a>
+        </div>
+    </div>
+    <div class="spaceTop"></div>
+    <div class="center-container fa-lg ">
+        <a class="red" href="assets/img/res/JingHanPD.pdf" target="_blank"><i class="fa fa-download"></i><b> Jing's Resume</b></a>
+        <!-- <a class="red" href="http://hanjing7.com/resource/JingHan19.pdf?i=1"><i class="fa fa-download"></i><b> Jing's Resume</b></a> -->
+    </div>
+    <div class="spaceTop"></div>
+    <div class="spaceTop"></div>
+
+    <div style="display: block;height: 250px;"></div>
+    <!--Footer Page Count-->
+    <div>
+        <p style="color: #aaa;
+        text-align: right;
+        font-size: .8em;">Thank you for visiting, you are the #
+            <a href="http://www.hitwebcounter.com" target="_blank">
+                <img src="http://hitwebcounter.com/counter/counter.php?page=7119587&style=0008&nbdigits=6&type=ip&initCount=5" title="" Alt="" style="border:0;">
+            </a> visitor</p>
+        <!-- hitwebcounter Code START -->
+    </div>
+</div>

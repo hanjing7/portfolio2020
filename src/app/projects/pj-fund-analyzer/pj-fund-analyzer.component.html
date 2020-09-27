@@ -1,0 +1,229 @@
+<div class="triangle1 block"></div>
+<div class="triangle2 block"></div>
+<div class="triangle3 block"></div>
+<div class="triangle4 block"></div>
+
+<div class="content-area">
+    <div class="content">
+        <div class="back">
+            <a routerLink="/home"><i class="fa fa-chevron-left"></i><span>Back To Home</span></a
+      >
+    </div>
+    <div class="left">
+      <h1>Fund Analyzer</h1>
+      <div class="seperator"></div>
+    </div>
+    <div class="right">
+      <h5>FINRA</h5>
+      <label class="grey">Jun 2017</label>
+    </div>
+
+    <p>
+      The Fund Analyzer helps you sort through and compare more than 30,000
+      mutual funds, exchange-traded funds, exchange-traded notes and money
+      market funds.
+    </p>
+    <img
+      src="http://www.finra.org/sites/default/files/FINRA-Fund-Analyzer_880x415-2.png"
+      alt="Fund analyzer screenshot"
+      style="width:100%;object-fit:contain; object-position: 100% 0%;"
+    />
+    <h2>Prototype</h2>
+    <iframe class="prototype"
+      src="https://www.youtube.com/embed/x_YfIKTykDs"
+      frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+    <p class="fa-md">
+      <a
+        class="red"
+        target="_blank"
+        href="https://sketch.cloud/s/Qjel1/a/orqrA2/play"
+        >View Sketch Cloud Prototype</a
+      >
+    </p>
+    <h3>What is Fund Analyzer?</h3>
+    <p>
+      The Fund Analyzer automatically applies a fund’s applicable fees and
+      commonly available discounts, The Fund Analyzer helps you sort through and
+      compare more than 30,000 mutual funds, exchange-traded funds,
+      exchange-traded notes and money market funds, The Fund Analyzer does the
+      math for you and shows how fees and expenses impact the value of your fund
+      over time.
+    </p>
+    <h3>Design Task</h3>
+    <p>
+      In the project, our team were responsible for redesigning the Fund
+      Analyzer with a more intuitive and user friendly UI. In this practice, we
+      tried to adopt Microsoft’s newly released fluent design for its simplicity
+      and mordern look and feel.
+    </p>
+    <div class="content-container">
+      <img src="assets/img/res/fa/result1.png" alt="Search result list" />
+      <img
+        src="assets/img/res/fa/result3.png"
+        alt="Search result list - Selected"
+      />
+    </div>
+
+    <h4>Search Result View</h4>
+    <p>
+      Under such artistic approach, we minimize the use of decorative line and
+      color background, and put primary focus on spacing and treatment on
+      elements interactivity to make information stands out.
+    </p>
+    <h4>Comparison View</h4>
+    <p>
+      During the design process, stakeholders with in-depth understanding on the
+      product keep emphasizing that past gain doesn't project the future profit.
+      So any number revenue or profit was just a forecast.
+    </p>
+    <p>
+      As only the calculation of Fee is accurate, we populate it at the top of
+      the section. adding 2 decimal points to make the display looks more
+      accurate the visualization grows toward bottom, so its fit user’s mental
+      modal as the cost, negative and substraction. indented display to show
+      visual hierarchy, and nesting relationship of fees right align numbers for
+      easy commparison, and emphasize the key number, adding visual decoration
+      toward bar chart try fit all information in one screen so you don’t lose
+      the info desity and allow easy comparison, scanning.
+    </p>
+    <h4>Visualization Design Challenge</h4>
+    <p>
+      At the initial stage of design, we tried several fancy visualizations.
+      however those proposals all faces potential technical challenges. Less is
+      more, keep the design simple and straightforward, minimizing text to ink
+      ratio.
+    </p>
+    <p>
+      <b>Challenge:</b> can’t be too technically challenging to accomplish,
+      considering the technical constraint as part of the project. No much
+      animation, js control on elements level.
+    </p>
+    <h4>Displaying Number Format</h4>
+    <p>
+      Right align is rarely seen in web design, but such treatment is clear for
+      number display. Make labels right aligned for more association across the
+      same row. UI treatment need to be consistent. medium black is for
+      clickable, grey being the label
+    </p>
+    <p>
+      put percentage on one side to maintain a consistency in design patern As
+      green and red can represent opposite market performance across culture,
+      the arrow up and down is necessary as a key indicator. Rank the general
+      summary at the top of chart to remain interaction consistency
+    </p>
+    <p>
+      In this redesign, we put clickable elements together All price related
+      calculation are gathered together, as future value is estimated based on
+      past growth rate. It is not a trustful source, but helpful source on
+      making future predictions
+    </p>
+    <h4>Color coding practice</h4>
+    <p>
+      In <b>Average Annual Return Section</b>, according to lessons learned from
+      previous practices, legend color assigned to each fund is somewhat
+      associated with their [Load Type] . This helps users associate the funds
+      easily and build up mental model. According to the previous user surveys,
+      most users would like to put different classes of same fund when making
+      comparison. So such solution would serve most senarios.
+    </p>
+    <p>
+      If different funds with the same [Load Type] are selected, shades and
+      variant of this load color would be used.
+    </p>
+
+    <h2>Interactivity</h2>
+    <img
+      src="assets/img/res/fa/compare_v2.png"
+      alt="Fee Story Comparison Craft"
+    />
+    <p>
+      Adjust the color contrast to make sure it fits all screen resolution,
+      especially using border to mark boundary
+    </p>
+    <ul class="square">
+      <li>Highlight the percentage of fee range that applies</li>
+      <li>
+        Inherit the label treatment, using indentation for nested data points
+        under hirarchy
+      </li>
+      <li>
+        Accordions only open one at a time, so customer will have good grip on
+        the entire picture without being overwelmed by info overload at certain
+        state.
+      </li>
+      <li>
+        Dynamically render the color on hover to direct customer attention to
+        target section and associate with the mapping and color coding.
+      </li>
+      <li>
+        Clicking on "read more" to open modal window for explaination simplify
+        front load vs back load verbiage to match with label or help customer
+        easily understand the concept
+      </li>
+      <li>
+        When introduced to this project, I was having great difficulty learning
+        the definition of [contingent deferred sales charge] and [sales charge],
+        so in this redesign, we simplify the terms as front load vs back load,
+        which is the verbiage they are commonly known for and users are more
+        accostomed to.
+      </li>
+    </ul>
+    <hr />
+    <div></div>
+    <div class="content-container">
+      <img
+        src="assets/img/res/fa/compare2.png"
+        alt="Fee Story Comparison Craft"
+      />
+      <img
+        src="assets/img/res/fa/compare3.png"
+        alt="Fee Story Comparison Craft"
+      />
+    </div>
+    <p>
+      In this detailed view for <b>Annual Operating Expenses</b>, we added
+      interactivity to visualization, as the dot of a fund is moused over, it
+      generate a dashed line toward [operating expence percentage] on y-axis for
+      a reference.
+    </p>
+    <img
+      src="assets/img/res/fa/compare4.png"
+      alt="Compare Annual Average Return"
+    />
+    <p>
+      The disclaimer line appears to break the continuity of design. However,
+      this is intentional effort to bring audience attention to the switch
+      context and scale. label estimated rate of return and highlight holding
+      period in the chart
+    </p>
+    <div class="content-container">
+      <img
+        src="assets/img/res/fa/compare3_advanced1.png"
+        alt="Advanced Options Panel"
+      />
+      <img
+        src="assets/img/res/fa/compare3_advanced2.png"
+        alt="Setting Advanced Options"
+      />
+    </div>
+    <p>
+      It only worth to reveal details if user choose to add this option. Adopted
+      a simple and clear design approach for easy responsiveness treatment.
+    </p>
+    <hr />
+    <p class="red fa-lg">
+      <i class="fa fa-link"></i>
+      <b>
+        <a class="red" href="https://tools.finra.org/"
+          > &nbsp;Fund Analyzer Home Page</a
+        ></b
+      >
+    </p>
+    <div class="spaceTop"></div>
+  </div>
+  <!--End Content -->
+</div>
+<app-home></app-home>

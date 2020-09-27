@@ -1,0 +1,103 @@
+/*nav a {*/
+
+
+/*padding: 5px 10px;*/
+
+
+/*text-decoration: none;*/
+
+
+/*margin-top: 10px;*/
+
+
+/*display: inline-block;*/
+
+
+/*background-color: #eee;*/
+
+
+/*border-radius: 4px;*/
+
+
+/*}*/
+
+#dockbottom {
+    position: fixed;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    /* background: linear-gradient(to top, #e3e3e3,rgba(230,230,230,0.3) 75%, rgba(0,0,0,0)); */
+    text-align: center;
+    padding-bottom: 23px;
+    padding-top: 80px;
+    z-index: 100000000000;
+}
+
+
+/* .tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+} */
+
+.tooltip:hover:after {
+    content: "Visible only to staff members!";
+    color: silver;
+    font-size:0.9em;
+    padding:0 10px;
+    background:black;
+  }
+  .tooltip-data:hover:after {
+    content: attr(data-msg);
+    color: silver;
+    font-size:0.9em;
+    padding:0 10px;
+    background:black;
+  }
+
+  .tooltip{
+      opacity: 1;
+  }
+
+
+/* Not able to hover object and show content at the same time*/
+
+
+/* 
+.tooltip_wrapper {
+    display: inline-block;
+    width: 20%;
+    height: 100%;
+}
+
+.bg-tooltip {
+    visibility: hidden;
+    background-color: red;
+}
+
+.tooltip_wrapper:hover .bg-tooltip {
+    visibility: visible;
+} */
+
+#container img:focus {
+    outline: none;
+    border-radius: 50%;
+    background:#ba695480;
+}
+
+
+/* @media only screen and (max-width: 720px) {
+  #container img:focus{
+    outline: none;
+}
+} */

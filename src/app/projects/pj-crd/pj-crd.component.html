@@ -1,0 +1,441 @@
+<div class="triangle1 block"></div>
+<div class="triangle2 block"></div>
+<div class="triangle3 block"></div>
+<div class="triangle4 block"></div>
+
+<div class="content-area">
+  <a routerLink="/home" class="back bc-float"
+    ><i class="fa fa-chevron-left"></i><span>Back To Home</span></a
+  >
+  <pdf-viewer
+    src="assets/img/pj/JH-WebCRD.pdf"
+    [render-text]="true"
+    [autoresize]="true"
+    [original-size]="false"
+    style="display: block; "
+  ></pdf-viewer>
+
+  <!-- <div class="section no-shadow">
+    <div class="content">
+      <h3>Status Timeline</h3>
+      <p>
+        Look into the details of different status on activity types to
+        understand the connection between status and their potential triggers,
+        identify status worth attentions.
+      </p>
+      <img
+        src="assets/img/res/crd/statusDiagram.png"
+        alt="Status Timeline Diagram"
+      />
+    </div>
+  </div> -->
+
+  <pdf-viewer
+    src="assets/img/pj/JH-WebCRD-2.pdf"
+    [render-text]="true"
+    [autoresize]="true"
+    [original-size]="false"
+    style="display: block; "
+  ></pdf-viewer>
+
+  <div
+    class="section no-shadow"
+    style="background-color:#f6f6f6;margin-top:-24px;"
+  >
+    <div class="spaceTop"></div>
+    <div class="content">
+      <h3>Filter Design</h3>
+      <hr class="head-decor" style="background-color:#5ABC5D; width: 120px;" />
+      <p>
+        Draw the status timelines depicting the occurance of all potential
+        status along each activity. This visualization shows that status are
+        generally different across types despite of their similarity in urgency.
+        <b
+          >We need a structured and grouped filter option closely associate
+          statuses with its types</b
+        >.
+      </p>
+    </div>
+    <div class="columns" style="width: 80%; margin: auto;">
+      <div class="column is-two-fifths">
+        <a href="assets/img/res/crd/statusDiagram.png" target="_blank">
+          <img
+            src="assets/img/res/crd/statusDiagram.png"
+            alt="Status Diagram of Each Activity Type"
+          />
+        </a>
+      </div>
+      <div class="column">
+        <a href="assets/img/res/crd/filterHome.png" target="_blank">
+          <img
+            src="assets/img/res/crd/filterHome.png"
+            alt="Finalized Filter Design"
+          />
+        </a>
+      </div>
+    </div>
+
+    <div class="spaceTop"></div>
+    <div class="content">
+      <h3>Usability Testing on Saving Filters</h3>
+      <hr class="head-decor" style="background-color: #6C48A3" />
+      <br />
+      <p>
+        The finalized filter design was well accepted by users (compliance
+        managers) during our usability test, as the structure of our filter UI
+        presentation is well fitting the user’s mental model, they can easily
+        associate their daily task with the filteration feature provided.
+      </p>
+      <p>
+        Wheras, the design process of saving filter and apply saved filters was
+        not so smooth. We went back and forth several times to iterate on our
+        final design deliverable.
+      </p>
+    </div>
+    <!-- Filter Solution Attempt 1&2 -->
+    <div class="columns">
+      <div class="column">
+        <h6>1st Attempt</h6>
+        <a href="assets/img/res/crd/filterflow1.png" target="_blank">
+          <img
+            style="background-color: white;"
+            src="assets/img/res/crd/filterflow1.png"
+            alt="Save Filter 1st Flow"
+          />
+        </a>
+        <ul>
+          <li>
+            <i class="fa fa-times red"></i>&nbsp;&nbsp; Lack of Indicator of
+            applied [Saved Filter]
+          </li>
+          <br />
+          <li>
+            <i class="fa fa-times red"></i>&nbsp;&nbsp; Extra click required to
+            apply [Saved Filter]
+          </li>
+        </ul>
+      </div>
+      <div class="column">
+        <h6>2nd Attempt</h6>
+        <a href="assets/img/res/crd/filterflow2.png" target="_blank">
+          <img
+            src="assets/img/res/crd/filterflow2.png"
+            alt="Save Filter 2nd Flow"
+          />
+        </a>
+        <ul>
+          <li>
+            <i class="fa fa-times red"></i>&nbsp;&nbsp; [Saved Filter] was not
+            discoverable.
+          </li>
+          <br />
+          <li>
+            <i class="fa fa-times red"></i>&nbsp;&nbsp; [Update Filter] concept
+            is hard to understand.
+          </li>
+          <br />
+          <li>
+            <i class="fa fa-times red"></i>&nbsp;&nbsp; Not scalable if many
+            filters options are selected.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Finalized Filter Saving Solution -->
+    <div class="spaceTop"></div>
+    <div class="content">
+      <h4>Finalized Filter Saving Solution</h4>
+      <hr class="head-decor" />
+      <ul class="square">
+        <li>Put "Saved Filter" and "Filter" closer on the layout.</li>
+        <li>
+          UI Tricks for saved filter option, so it is visible regardless the
+          opening status of the filter panel.
+        </li>
+        <li>
+          Removed Update Saved Filter feature, to simplify the process by
+          removing undemanded features away from the path.
+        </li>
+      </ul>
+      <a href="assets/img/res/crd/filterflow3.3.png" target="_blank">
+        <img
+          src="assets/img/res/crd/filterflow3.3.png"
+          alt="Finalized Filter Saving Solution"
+        />
+      </a>
+    </div>
+  </div>
+
+  <div class="section darktheme" style="background-color: #676767;">
+    <div class="spaceTop"></div>
+    <div class="content">
+      <h2>Interactive Prototypes</h2>
+      <hr class="head-decor" />
+      <p>Demonstrating system behavior and interaction model.</p>
+    </div>
+    <div class="columns">
+      <div class="column no-shadow is-three-quarters">
+        <img
+          src="assets/img/res/crd/CRD-home.png"
+          alt="Dashboard collecting Feedback"
+        />
+      </div>
+      <div class="column">
+        <h6>Better System Integration</h6>
+        <h6>Flexible Data Entry</h6>
+        <p>Customized to relevant information you need for your daily tasks</p>
+        <h6>Unified Worklist</h6>
+        <p>
+          Activity Inbox replacing a dozen disparate queues Consolidated view of
+          the classic CRD Queues and provided features to customize and export
+          the lists
+        </p>
+        <ul class="circle">
+          <li>Filter out noise</li>
+          <li>Check what you need quickly</li>
+        </ul>
+      </div>
+    </div>
+    <div class="columns">
+      <div class="column">
+        <h6>Designed to Get Work Done</h6>
+        <p>Focus on Convenience by carring over capability from Classic CRD</p>
+        <h6>Self-Service Reporting</h6>
+        <h6>Communication and Collaboration</h6>
+        <p>Welcoming feedback on new design</p>
+        <h6>Enhanced Data Collection</h6>
+        <p>New Expereince for collecting required registration info (U4, U5)</p>
+      </div>
+      <div class="column no-shadow is-three-quarters">
+        <img
+          src="assets/img/res/crd/CRD-feedback.gif"
+          alt="Dashboard collecting Feedback"
+        />
+      </div>
+    </div>
+    <div class="columns">
+      <div class="column no-shadow is-three-quarters">
+        <img src="assets/img/res/crd/CRD-indv-click1.gif" alt="List Behavior" />
+      </div>
+      <div class="column">
+        <h6>Comprehensive profile of an individual</h6>
+        <h6>Individuals</h6>
+        <p>
+          New interface for querying and viewing information about professionals
+        </p>
+        <h6>Views</h6>
+        <p>
+          Further enhancements to how firms view individuals, facilitating
+          registration managers better support reps.
+        </p>
+        <h6>Update</h6>
+        <p>Instant edit to update individual information from their profile</p>
+      </div>
+    </div>
+
+    <h3>Concepts along the Roadmap</h3>
+    <div class="columns">
+      <div class="column no-shadow">
+        <img
+          src="assets/img/res/crd/CRD-indv-search.gif"
+          alt="Individual Page"
+        />
+        <p>
+          <b>Default Individual page:</b> Search for an individual and apply
+          quick filters.
+        </p>
+      </div>
+      <div class="column no-shadow">
+        <img
+          src="assets/img/res/crd/CRD-indv-updateBranch.gif"
+          alt="Update Individual Branch Info"
+        />
+        <p>
+          <b>Bulk Action Support:</b> Batch Processing the same action for a
+          group of selected individuals.
+        </p>
+      </div>
+    </div>
+    <div class="spaceTop"></div>
+  </div>
+
+  <div class="section">
+    <div class="content">
+      <h3>FUll User Profiles</h3>
+      <p>
+        The view of individual profiles on all three major CRD backboned
+        platforms for better internal consistency.
+        <!-- making consistent and synchronized update on representatives'
+        profile possible. -->
+      </p>
+    </div>
+    <div class="columns">
+      <div class="column">
+        <p class="is-small">BrokerCheck</p>
+        <a href="assets/img/res/crd/indv_BC.png" target="_blank">
+          <img
+            src="assets/img/res/crd/indv_BC.png"
+            alt="Individual Page on BrokerCheck"
+          />
+        </a>
+        <a
+          href="https://brokercheck.finra.org/individual/summary/729496"
+          class="red"
+          ><b>Real BrokerCheck Profile</b></a
+        >
+      </div>
+      <div class="column">
+        <p class="is-small">Financial Professional Gateway</p>
+        <a href="assets/img/res/crd/indv_FinPro.png" target="_blank">
+          <img src="assets/img/res/crd/indv_FinPro.png" alt="indv_FinPro" />
+        </a>
+        <a class="red" href="https://youtu.be/tRsCkshyVYE"
+          ><b> Web Prototype </b></a
+        >
+        |
+        <a class="red" href="https://youtu.be/X6CL5w7LNDM"
+          ><b> FinPro Mobile Prototype </b></a
+        >
+      </div>
+
+      <div class="column">
+        <p class="is-small">WebCRD</p>
+        <a href="assets/img/res/crd/indv_CRD.png" target="_blank">
+          <img src="assets/img/res/crd/indv_CRD.png" alt="indv_CRD" />
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="content">
+      <h1>Platform Usage</h1>
+      <nav class="level">
+        <div class="level-itehm has-text-centered">
+          <div>
+            <p class="heading">Individuals on WebCRD</p>
+            <p class="title" style="color:#0282D1">5,552</p>
+          </div>
+        </div>
+        <div class="level-itehm has-text-centered">
+          <div>
+            <p class="heading">Reps Registered on FinPro</p>
+            <p class="title" style="color:#233E66">73,000</p>
+          </div>
+        </div>
+        <div class="level-itehm has-text-centered">
+          <div>
+            <p class="heading">Conversion to NewCRD</p>
+            <p class="title" style="color:#9EC405">45% +</p>
+          </div>
+        </div>
+      </nav>
+      <p>
+        Pervasively positive feedback was received for the new WebCRD Redesign,
+        compliance officers can't wait to see it comes true. Users who have
+        adopted <u>Activities</u> feature find it exceptionally valuable.
+      </p>
+      <p>
+        The ability to perform <u>bulk actions</u> was overwhelmingly supported
+        by firms and considered a high priority for simplifying branch use
+        cases.
+      </p>
+      <p>
+        After pre-launching of the Dashboard, firms indicated that they
+        recognize the benefits of WebCRD by way of reducing costs for the firm
+        and empowering registration managers to better manage info updates.
+      </p>
+      <!--Twitter Quote-->
+      <blockquote class="twitter-tweet">
+        <p lang="en" dir="ltr">
+          FINRA Launches Overhaul of CRD and Other Registration Systems
+          <a href="https://t.co/j5O8vrNn5S">https://t.co/j5O8vrNn5S</a>
+          <a
+            href="https://twitter.com/hashtag/FINRA?src=hash&amp;ref_src=twsrc%5Etfw"
+            >#FINRA</a
+          >
+          <a
+            href="https://twitter.com/hashtag/Overhaul?src=hash&amp;ref_src=twsrc%5Etfw"
+            >#Overhaul</a
+          >
+          <a
+            href="https://twitter.com/hashtag/CentralRegistrationDepository?src=hash&amp;ref_src=twsrc%5Etfw"
+            >#CentralRegistrationDepository</a
+          >
+          <a
+            href="https://twitter.com/hashtag/WebCRD?src=hash&amp;ref_src=twsrc%5Etfw"
+            >#WebCRD</a
+          >
+        </p>
+        &mdash; Financialish (@financialish)
+        <a
+          href="https://twitter.com/financialish/status/1011663833834942464?ref_src=twsrc%5Etfw"
+          >June 26, 2018</a
+        >
+      </blockquote>
+      <script
+        async
+        src="https://platform.twitter.com/widgets.js"
+        charset="utf-8"
+      ></script>
+      
+    </div>
+  </div>
+  <div class="section">
+    <div class="content">
+      <h2>Lessons Learned</h2>
+      <ul class="square">
+        <li>
+          For all design related problems, circle back to what users need and
+          goals.
+        </li>
+        <li>
+          Understanding the <b>data structure</b> and
+          <b>information architecture</b> is they key to the right solution.
+        </li>
+        <li>
+          All design decisions need to backed by <b>evidence</b> (Browsing
+          traffic, Survey, Interview notes) justifying the design rationale.
+        </li>
+        <li>
+          <b>Documenting </b> the iteration process to keep track of all
+          discussed solutions, their pros and cons, and especially why they
+          didn't work out.
+        </li>
+        <li>
+          <b>Loop users in</b> all stages of the design procss, as they could
+          provide insightful feedback with their in-depth engagement interacting
+          with the system.
+        </li>
+        <h6>Personal Takeaway</h6>
+        <li>
+          Reconsider the importance between visual design and product design,
+          Making things functional first, and then make things pretty.
+        </li>
+      </ul>
+    </div>
+    <div class="spaceTop"></div>
+  </div>
+  <br /><br />
+  <div class="section">
+    <div class="content">
+      <div class="spaceTop"></div>
+      <div class="spaceTop"></div>
+      <div class="spaceTop"></div>
+      <h2>Design Appendix</h2>
+    </div>
+    <div class="columns">
+      <div class="column is-two-thirds">
+        <video controls>
+          <source src="/assets/img/res/crd/filter2.mp4" type="video/mp4" />
+          Saved filter feature Development Screenshot
+        </video>
+      </div>
+      <div class="column">
+        <img src="/assets/img/res/crd/mobile.png" alt="Mobile Design" />
+      </div>
+    </div>
+  </div>
+</div>
+<app-home></app-home>
