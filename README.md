@@ -43,9 +43,9 @@ cd ..
 
 
 ### Problems reference
-####`ng build` encounters error `Error: error:0308010C:digital envelope routines::unsupported`, 
-[Answer link](https://stackoverflow.com/questions/69692842/error-message-error0308010cdigital-envelope-routinesunsupported), try 
+#### `ng build` encounters error `Error: error:0308010C:digital envelope routines::unsupported`
 
+[Answer link](https://stackoverflow.com/questions/69692842/error-message-error0308010cdigital-envelope-routinesunsupported), try 
 ```set NODE_OPTIONS=--openssl-legacy-provider```
 
 #### Git operations failed due to authentication
