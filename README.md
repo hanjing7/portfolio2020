@@ -49,19 +49,30 @@ cd ..
 ```set NODE_OPTIONS=--openssl-legacy-provider```
 
 #### Git operations failed due to authentication
-https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
-
-https://stackoverflow.com/questions/47455300/ssh-config-bad-configuration-option-usekeychain-on-mac-os-sierra-10-12-6
+- https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+- https://stackoverflow.com/questions/47455300/ssh-config-bad-configuration-option-usekeychain-on-mac-os-sierra-10-12-6
+- https://blog.csdn.net/weixin_42562387/article/details/114443451
 
 ```
 # using git-bash, rather than cmd
 eval $(ssh-agent -s)
 ssh-keygen -t ed25519 -C "hanjing7@github.com"
 ssh-keygen -t ed25519 -C "hanjing7@umich.edu"
+# add private key
 ssh-add id_ed25519
+# verify
 ssh -T git@github.com
-# copy pub key content (all) to github settings
+# copy pub key content (all) to github account settings
+
 git config --global user.name "hanjing7"
 git config --global user.email hanjing7@umich.edu
 
 ```
+
+Still encounter problem
+```
+$ git push
+remote: Permission to hanjing7/portfolio2020.git denied to chutianwen.
+fatal: unable to access 'https://github.com/hanjing7/portfolio2020.git/': The requested URL returned error: 403
+```
+Finally, solved by adding chutianwen to this repo
