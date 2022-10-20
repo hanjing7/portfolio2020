@@ -27,11 +27,41 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
 ## Command
-If necessary to reinstall angular-kit: `npm install --save-dev @angular-devkit/build-angular` 
-`npm install ngx-device-detector --save`
-To publish at github.
-`ng build --prod --output-path docs --base-href https://hanjing7.github.io/portfolio2020/`
-`cd docs`
-`mv index.html 404.html`
-`cd ..`
+If necessary to reinstall angular-kit: 
+```
+npm install --save-dev @angular-devkit/build-angular
+npm install ngx-device-detector --save
+```
 
+To publish at github.
+```
+ng build --prod --output-path docs --base-href https://hanjing7.github.io/portfolio2020/
+cd docs
+mv index.html 404.html
+cd ..
+```
+
+
+### Problems reference
+####`ng build` encounters error `Error: error:0308010C:digital envelope routines::unsupported`, 
+[Answer link](https://stackoverflow.com/questions/69692842/error-message-error0308010cdigital-envelope-routinesunsupported), try 
+
+```set NODE_OPTIONS=--openssl-legacy-provider```
+
+#### Git operations failed due to authentication
+https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+
+https://stackoverflow.com/questions/47455300/ssh-config-bad-configuration-option-usekeychain-on-mac-os-sierra-10-12-6
+
+```
+# using git-bash, rather than cmd
+eval $(ssh-agent -s)
+ssh-keygen -t ed25519 -C "hanjing7@github.com"
+ssh-keygen -t ed25519 -C "hanjing7@umich.edu"
+ssh-add id_ed25519
+ssh -T git@github.com
+# copy pub key content (all) to github settings
+git config --global user.name "hanjing7"
+git config --global user.email hanjing7@umich.edu
+
+```
